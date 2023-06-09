@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Empleados</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Registro de Empleados</h1>
+    <form id="employeeForm">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" required><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required><br>
+        <label for="estadoCivil">Estado Civil:</label>
+        <select id="estadoCivil" required>
+            <option value="">Seleccionar</option>
+            <option value="soltero">Soltero(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="viudo">Viudo(a)</option>
+        </select><br>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" required>
+            <option value="">Seleccionar</option>
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+        </select><br>
+        <label for="sueldo">Sueldo:</label>
+        <select id="sueldo" required>
+            <option value="">Seleccionar</option>
+            <option value="menos1000">Menos de 1000 Bs.</option>
+            <option value="entre1000y2500">Entre 1000 y 2500 Bs.</option>
+            <option value="mas2500">Más de 2500 Bs.</option>
+        </select><br>
+        <button type="button" id="saveEmployeeButton">Guardar</button>
+    </form>
+    <h2>Empleados Registrados:</h2>
+    <table id="employeeTable" border="1">
+        <thead>
+            <tr>
+                <th>Nombre y Apellido</th>
+                <th>Edad</th>
+                <th>Estado Civil</th>
+                <th>Sexo</th>
+                <th>Sueldo</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Resultados:</h2>
+    <div id="results"></div>
+</body>
+</html>
